@@ -1,0 +1,21 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: font-family: 'Merriweather', serif;
+    background-color:#f9fafc;
+}
+
+.navbar {
+    display: flex;
+}
+
+.navbar__brand {
+    width: 100px;
+}
+
+.navbar__logo {
+    width: 100px;
+}
