@@ -9,13 +9,58 @@ body {
 }
 
 .navbar {
-    display: flex;
+    display:flex;
+    align-items: center;  /*two div are center using flex property*/
+    justify-content: space-around; /*space-arounf for two div*/
+    background-color: #fff;
 }
 
 .navbar__brand {
     width: 100px;
+   
+    
 }
 
 .navbar__logo {
-    width: 100px;
+    width: 100%;
+   
+    
+}
+
+
+.nav__item {
+   background-image: linear-gradient(
+    to right,         /*direction*/
+    #ff512f 0%,
+    #dd2476 51%,     /* for button color*/
+    #ff512f 100%
+   );
+   color:#fff;   /* for word color*/
+   border-radius: 6px;
+   border: none;
+   padding:12px;
+   font-weight: 600; /*increase the font size of button of inside the word*/
+  
+}
+.nav__item:hover {
+    border:2px solid #ff6767;
+    cursor:pointer;
+}
+@media (min-width:414px) {
+    .navbar {
+        justify-content: space-between; /*it is adjust the parent div padding and space*/
+        padding: 10px 30px;
+    }
+}
+
+@media (min-width:1024px) {
+    .navbar__brand {   /* it is the increase the width of img  */
+        width: 150px;
+        
+    }
+    .nav__item{
+
+    
+        padding:20px; /* increase the font size and padding of inside the button*/
+        font-size: 20px;
 }
