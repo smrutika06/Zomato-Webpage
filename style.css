@@ -5,62 +5,136 @@
 
 body {
     font-family: font-family: 'Merriweather', serif;
-    background-color:#f9fafc;
+    background-color: #ebf2ff;
 }
 
 .navbar {
-    display:flex;
-    align-items: center;  /*two div are center using flex property*/
-    justify-content: space-around; /*space-arounf for two div*/
+    display: flex;
+    align-items: center;
+    /*two div are center using flex property*/
+    justify-content: space-around;
+    /*space-arounf for two div*/
     background-color: #fff;
 }
 
 .navbar__brand {
     width: 100px;
-   
-    
+
+
 }
 
 .navbar__logo {
     width: 100%;
-   
-    
+
+
 }
 
 
-.nav__item {
-   background-image: linear-gradient(
-    to right,         /*direction*/
-    #ff512f 0%,
-    #dd2476 51%,     /* for button color*/
-    #ff512f 100%
-   );
-   color:#fff;   /* for word color*/
-   border-radius: 6px;
-   border: none;
-   padding:12px;
-   font-weight: 600; /*increase the font size of button of inside the word*/
+.button__primary {
+    background-image: linear-gradient(to right,
+            /*direction*/
+
+            #ff512f 0%,
+            #dd2476 51%,
+            #ff512f 100%);
+    /* for button color*/
+    color: #fff;
+    /* for word color*/
+
+    border-radius: 6px;
+    border: none;
+    padding: 12px;
+    font-weight: 600;
+    /*increase the font size of button of inside the word*/
+
+}
+
+.button__primary:hover {
+
+    border: 2px solid #ff6767;
+    cursor: pointer;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 20px 20px 20px;
+
+}
+
+.hero__image__container {
+    width: 600px;
+
+}
+
+.hero__img {
+    width: 100%;
+    border-radius: 6px;
+    margin-right: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    /*shadow for image*/
+}
+
+.hero__description {
+    width: 600px;
+    padding-right: 2px;
+    margin-left:20px;
+    align-items: center;
   
+
 }
-.nav__item:hover {
-    border:2px solid #ff6767;
-    cursor:pointer;
+
+.hero__text {
+    width: 100%;
+    margin: 20px 0;
+    font-size: 30px;
+    color: #1d3557;
+    font-weight: 600;
+
+
+
 }
+
+
+
+
 @media (min-width:414px) {
     .navbar {
-        justify-content: space-between; /*it is adjust the parent div padding and space*/
+        justify-content: space-between;
+        /*it is adjust the parent div padding and space*/
         padding: 10px 30px;
+    }
+
+    .hero__container {
+       
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    .hero__text {
+        font-size:35px;
     }
 }
 
 @media (min-width:1024px) {
-    .navbar__brand {   /* it is the increase the width of img  */
-        width: 150px;
-        
+    .container {
+        max-width: 70%; /*two flex comes to each other*/
     }
-    .nav__item{
+    .navbar__brand {
+        /* it is the increase the width of img  */
+        width: 150px;
 
-    
-        padding:20px; /* increase the font size and padding of inside the button*/
+    }
+
+    .button__primary {
+
+
+        padding: 20px;
+        /* increase the font size and padding of inside the button*/
         font-size: 20px;
-}
+    }
